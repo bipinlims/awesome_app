@@ -10,8 +10,13 @@ class GallareyView extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Awesome App"),
         ),
-        body: const Center(
-          child: Text("Welcome to Gallarey page"),
+        body:  Center(
+          child: Column(
+            children: [
+              Text("Welcome to Gallarey page"),
+              ElevatedButton(onPressed: (){}, child: Text("View all"))
+            ],
+          ),
         ),
       ),
     );
